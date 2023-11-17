@@ -1,0 +1,258 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head class="b">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>evrohouse</title>
+    <script src="https://unpkg.com/imask"></script>
+    <link rel="stylesheet" href="{% static 'bulma.css' %}">
+    <link rel="stylesheet" href="{% static 'st.css' %}">
+    <link rel="stylesheet" href="{% static 'index.js' %}">
+
+
+</head>
+<body   >
+  
+  <section class="b">
+    <nav class="navbar b md" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href=http://127.0.0.1:8000>
+            <img src="{% static 'eh logo.png' %}" alt="Logo">
+          </a>
+         
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <div class="navbar-item" >
+              <h4 class=" mt-7" > <a href="tel:+998909507400">+998 (90) 950-74-00</a> Звоните нам с 09:00 до 20:00 в будние дни </h4>
+          
+            </div>
+            
+              </div>
+            </div>
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+               
+
+
+
+            
+                 
+          </div>
+        </div>
+      </nav>
+
+
+      <br><br>
+
+<div class="column ">
+    <div class="column">
+
+   
+
+        <div class="columns b">
+                 
+            <div class="column">
+
+              
+                <div class="title m is-1 black  "  >Агенство
+                    Недвижимости
+                   </div>
+                   <div class="m subtitle blue pt-2">Все операции по недвижимости <br>
+                    Купли-продажа, аренда, инвестиции <br>
+                    Полное сопровождение проверка документов</div>
+                    <button class="button bc has-text-centered bm" ><a class=" blue" href="#consult">получить консультацию</a></button>
+          
+            </div>
+            <div class="column pr-6 pb-6">
+              <img class="" src="/static/Realtor-rafiki.svg" alt="">
+            </div>
+
+           
+            
+            
+        </div>
+    </section>
+
+
+    <div class="box boxx" >
+      <nav class="level is-mobile">
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading  blue s" >Опыт</p>
+            <p class="title black">более 5 лет</p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading  blue s">довольные клиенты</p>
+            <p class="title black">694</p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading  blue s">Followers</p>
+            <p class="title black">456K</p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+         
+        </div>
+      </nav>
+    </div>
+
+    
+ <section>
+         <div class="boxc"></div>
+ </section>
+      
+
+
+
+
+ 
+
+
+<section  class="b  section-margin-top"> 
+  <br>
+
+
+  <h1 class="title has-text-centered"><strong>Почему с нами лучше?</strong></h1>
+  <div class="columns ">
+
+
+      <div class="columns columndesign pt-3">
+        <div class="column">
+          <img src="/static/house icon.svg" alt="" >
+        </div>
+        <div class="column is-three-quarters">Тщательно отбираем базу объектов</div>
+      </div>
+
+
+      <div class="columns columndesign pt-1">
+        <div class="column ">
+          <img class="pt-2" src="/static/money.svg" alt="" >
+        </div>
+        <div class="column  is-three-quarters">Юридическое сопровождение во время сделки</div>
+      </div>
+
+      <div class="columns columndesign pt-1">
+        <div class="column">
+          <img class="pt-2" src="/static/key.svg" alt="" >
+        </div>
+        <div class="column is-three-quarters">Все консультации и сервисы компании бесплатны</div>
+      </div>
+
+
+      <div class="columns columndesign pt-2 ">
+        <div class="column "> 
+          <img class="" src="/static/time.svg" alt="" >
+        </div>
+        <div class="column pt-5  is-three-quarters">Экономим ваше время</div>
+      </div>
+ 
+  </div>
+
+
+
+
+  <br><br><br><br><br><br>
+      <div class="title has-text-centered ">Консультируем бесплатно</div>
+      <div class="text has-text-centered is-3 ">Оставьте заявку на консультацию или звоните нам по телефону <a href="tel:+998909507400">+998 (90) 950-74-00</div></a>
+      <br>
+      <div class="columns">
+
+        <div class="column pl-7 pt-6">
+            <img src="/static/uppload.svg" alt="">
+            
+        </div> 
+
+
+        <section>
+
+        </section>
+
+
+        <div class="column ">
+           
+           <div class="form doc mt-5" >
+            
+           <form action="" method="post">
+       
+            <div>
+              {% csrf_token %}
+              
+              <label class="pp" for="">Полное имя</label>
+              <input class="input is-medium mt-22" type="text"  name="name">
+             <label class="" for="">Адрес эл-почты</label>
+             <input class="input is-medium  mt-33" type="text"  name="email">
+                <label class="" for="">Номер телефона</label>
+                <input class="input is-medium mt-44" type="text" value="+998" id="phone-mask" name="number">
+             <button class="button bf">Оставить заявку</button>
+            </div>
+           </form>
+           
+           
+            </div>
+        </div>
+   
+        
+    </div>
+    </section>
+</div>
+
+<section >
+  <footer class="footer ">
+    <div class="content has-text-centered ">
+      <p>
+        <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+  </footer>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var phoneMask = IMask(
+      document.getElementById('phone-mask'), {
+      mask: '+{998}(00)000-00-00'
+      });
+</script>
+
+
+
+</body>
+
+</html>
